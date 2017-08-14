@@ -1,0 +1,11 @@
+Package: junior2017
+Type: Package
+Title: Fiscal Data on Brazilian subnational governments
+Version: 0.1.0
+Author: Francisco Alves
+Maintainer: Francisco Alves de Oliveira Junior <fjunior.alves.oliveira@gmail.com>
+Description: Fiscal variables that are needed to compute the fiscal indicators used by the Brazilian National Treasury Secretariat (NTS) for payment capacity evaluation.
+License: CC0 (public domain)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
