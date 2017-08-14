@@ -1,3 +1,6 @@
+Brazilian subnational governments fiscal data
+=============================================
+
 This package aims to make available in machine readable format regional
 discriminated data on the fiscal variables that are needed to compute
 the fiscal indicators used by the Brazilian National Treasury
@@ -14,7 +17,7 @@ This package can be installed directly from GitHub using `devtools`:
     devtools::install_github("fjuniorr/junior2017")
 
 Alternatively, a `csv` file with the dataset can be downloaded
-[here](https://github.com/fjuniorr/junior2017/raw/master/data-raw/fiscal_data.csv).
+<a href="https://github.com/fjuniorr/junior2017/raw/master/data-raw/fiscal_data.csv" target="_blank">here</a>.
 
 Code examples
 =============
@@ -42,6 +45,11 @@ reproduced with
 
 ![](README_files/figure-markdown_strict/unnamed-chunk-3-1.png)
 
+<!-- Similarly, the estimation results for model 1 presented in table $4.2$ of @junior2017 can be reproduced with -->
+<!-- ```{r} -->
+<!-- library(brglm) -->
+<!-- fit <- brglm(spec_capag, family=binomial(link='logit'), data = DT) -->
+<!-- ``` -->
 References
 ==========
 

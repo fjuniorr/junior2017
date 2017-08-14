@@ -8,6 +8,8 @@ bibliography: references.bib
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+# Brazilian subnational governments fiscal data
+
 This package aims to make available in machine readable format regional discriminated data on the fiscal variables that are needed to compute the fiscal indicators used by the Brazilian National Treasury Secretariat (NTS) for payment capacity evaluation.
 
 # Installation
@@ -21,7 +23,7 @@ if (!require("devtools")) {
 devtools::install_github("fjuniorr/junior2017")
 ```
 
-Alternatively, a `csv` file with the dataset can be downloaded [here](https://github.com/fjuniorr/junior2017/raw/master/data-raw/fiscal_data.csv).
+Alternatively, a `csv` file with the dataset can be downloaded <a href="https://github.com/fjuniorr/junior2017/raw/master/data-raw/fiscal_data.csv" target="_blank">here</a>.
 
 # Code examples
 
@@ -48,5 +50,14 @@ ggplot(fiscal_data, aes(x = factor(year), y = capag_il, color = state_calamity))
     scale_color_discrete(name = "Financial calamity declared", labels = c("no (n = 216)", "yes (n = 27)")) +
     guides(color=guide_legend(reverse=TRUE))
 ```
+
+<!-- Similarly, the estimation results for model 1 presented in table $4.2$ of @junior2017 can be reproduced with -->
+
+<!-- ```{r} -->
+<!-- library(brglm) -->
+
+<!-- fit <- brglm(spec_capag, family=binomial(link='logit'), data = DT) -->
+<!-- ``` -->
+
 
 # References
